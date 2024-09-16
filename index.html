@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Calculator
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.webp">
+</head>
+<body>
+    <div class="ns">
+        Size resolution not supported.
+    </div>
+    <div class="calculator">
+        <input type="text" class="equation" maxlength="30">
+        <button id="operator-button" class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 31.5vh; left: 2%;">+</button>
+        <button id="operator-button" class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 31.5vh; left: 19%;">-</button>
+        <button id="operator-button" class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 31.5vh; left: 36%;">/</button>
+        <button id="operator-button" class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 31.5vh; left: 53%;">*</button>
+        <button id="operator-button" class="digit-button" onclick="clr()" style="position: absolute; top: 31.5vh; left: 70%; width: 25%;">CLR</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 44vh; left: 2%;">1</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 44vh; left: 19%;">2</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 44vh; left: 36%;">3</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 44vh; left: 53%;">4</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 44vh; left: 70%;">5</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 56vh; left: 2%;">6</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 56vh; left: 19%;">7</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 56vh; left: 36%;">8</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 56vh; left: 53%;">9</button>
+        <button class="digit-button" onclick="add(this.innerHTML)" style="position: absolute; top: 56vh; left: 70%;">0</button>
+        <button id="equals-button" class="digit-button" onclick="calculate()" style="position: absolute; bottom: 1vh; right: 2%">=</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
